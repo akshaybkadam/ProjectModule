@@ -5,7 +5,7 @@ function saveEmployee(){
 	var uname = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("password").value;
-	
+	 
 	alert(email);  
 	
 }
