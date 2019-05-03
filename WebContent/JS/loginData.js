@@ -6,6 +6,6 @@ function saveEmployee(){
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("password").value;
 	
-	alert(email);
+	alert(email);  
 	
 }
