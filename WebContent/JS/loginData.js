@@ -16,7 +16,7 @@ function saveEmployee(){
 			'password' : password,
 			'country' :country
 		}
-	
+	 
 	$.ajax({
         url: 'http://localhost:8082/Dems/saveServlet',
         type: 'POST',
