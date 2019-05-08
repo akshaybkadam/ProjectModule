@@ -20,7 +20,7 @@ function saveEmployee(){
 	$.ajax({
         url: 'http://localhost:8082/Dems/saveServlet',
         type: 'POST',
-        dataType: 'json',
+        dataType: 'text',
         data: eDetails,
         success: function (data) {
          alert(data);
