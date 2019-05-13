@@ -18,7 +18,7 @@ function saveEmployee(){
 		}
 	 
 	$.ajax({
-        url: 'http://localhost:8082/Dems/saveServlet',
+        url: 'saveServlet',
         type: 'POST',
         dataType: 'text',
         data: eDetails,
@@ -30,10 +30,5 @@ function saveEmployee(){
         	alert("error");
         }
         
-    });
-	
-	
-	
-	
-	
+    });	
 }
