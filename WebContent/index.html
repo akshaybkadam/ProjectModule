@@ -2,30 +2,28 @@
 <html>   
 <head>  
 <meta charset="ISO-8859-1">  
-<title>Insert title here</title> 
+<title>LogIn Details</title> 
 <script type = "text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/login.css" />
 <script type="text/javascript" src="JS/loginData.js"></script>
 </head>  
 <body>  
-  
-<h1>Add New Employee</h1>  
-<form id = 'frm1'>  
-<table>  
-<tr><td>Name:</td><td><input type="text" id="name"/></td></tr>  
-<tr><td>Password:</td><td><input type="password" id="password"/></td></tr>  
-<tr><td>Email:</td><td><input type="email" id="email"/></td></tr>  
-<tr><td>Country:</td><td>  
-<select id="country" style="width:150px">  
-<option>India</option>
-<option>USA</option>
-<option>UK</option>  
-<option>Other</option>  
-</select>  
-</td></tr>  
-<tr><td colspan="2"><input type="submit" onClick="saveEmployee()"/></td></tr>  
-</table>  
-</form>  
-  
-  
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+  <h3>Login</h3> 
+    <form>
+      <input type="text" id="username"  name="username" placeholder="username">
+      <input type="text" id="password"  name="password" placeholder="password">
+      <!-- <input type="submit"  value="Log In" onClick="loginEmployee()"> -->
+      <input type="submit" type="button" value="Log In" onclick="loginEmployee();"/>
+    </form>
+    <div id="formFooter">
+      <a class="underlineHover" href="">Forgot Password?</a></br>
+      <a class="underlineHover" href="http://localhost:8082/Dems/AddEmployeeDetails.html">Create New Account?</a>
+    </div>
+  </div>
+</div>
 </body>  
 </html>  

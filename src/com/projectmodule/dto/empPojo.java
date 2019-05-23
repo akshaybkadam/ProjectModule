@@ -1,4 +1,4 @@
-package com.projectmodule.pojo;
+package com.projectmodule.dto;
 
 
 
@@ -36,8 +36,5 @@ public class empPojo{
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	
-	
-	
-	
+		
 }

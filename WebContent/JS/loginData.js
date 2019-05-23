@@ -1,6 +1,31 @@
+function loginEmployee(){
+	alert("InSide");
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	
+	var eDetails = 
+	{
+		'username': username,
+		'password' : password	
+	}
+ 
+	$.ajax({
+	    url: 'loginServlet',
+	    type: 'POST',
+	    dataType: 'text',
+	    data: eDetails,
+	    success: function (data) {
+	     alert("done it");
+	    },
+	    error: function(data){
+	    	//alert(JSON.stringify(data));
+	    	alert("error");
+	    }
+	});
+	alert("Done");
+}
+
 function saveEmployee(){
-	/**
-	 * trying to get all values by the form id*/
 	
 	var uname = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
@@ -24,6 +49,7 @@ function saveEmployee(){
         data: eDetails,
         success: function (data) {
          alert(data);
+         window.location = "http://localhost:8082/Dems/index.html";
         },
         error: function(data){
         	//alert(JSON.stringify(data));

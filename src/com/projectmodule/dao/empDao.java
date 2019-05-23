@@ -1,9 +1,10 @@
 package com.projectmodule.dao;
 
-import java.util.*;  
-import java.sql.*;  
+import java.util.*;
 
-import com.projectmodule.pojo.*;
+import com.projectmodule.dto.*;
+
+import java.sql.*;
 public class empDao{
 	
 	 public static Connection getConnection(){  

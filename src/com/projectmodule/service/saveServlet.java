@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.projectmodule.pojo.*;
 import com.projectmodule.dao.*;
+import com.projectmodule.dto.*;
  
 @WebServlet("/saveServlet")
 public class saveServlet extends HttpServlet {
