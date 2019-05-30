@@ -35,6 +35,29 @@ public class empDao{
 		  
 		  return status;
 	  } 
+	  
+	  public static List<empPojo> getAllEmployees() {
+		  
+		  List<empPojo> list=new ArrayList<empPojo>();
+		  try {
+			   	Connection conn = empDao.getConnection();
+			   	PreparedStatement ps=conn.prepareStatement("select * from Employee");
+			  	ResultSet rs = ps.executeQuery();
+			  	
+			  	while(rs.next()){  
+			  		empPojo e=new empPojo();   
+	                e.setName(rs.getString(1));  
+	                e.setPassword(rs.getString(2));  
+	                e.setEmail(rs.getString(3));  
+	                e.setCountry(rs.getString(4));  
+	                list.add(e);  
+	            }  
+			  	conn.close();  	  		
+		  	}catch(Exception ex) {ex.printStackTrace();}
+		  
+		  return list;  
+		  
+	  }
 	
 }
 

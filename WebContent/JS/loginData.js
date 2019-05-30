@@ -15,7 +15,7 @@ function loginEmployee(){
 	    dataType: 'text',
 	    data: eDetails,
 	    success: function (data) {
-	     alert("done it");
+	     alert(data);
 	    },
 	    error: function(data){
 	    	//alert(JSON.stringify(data));
